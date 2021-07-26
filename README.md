@@ -21,6 +21,6 @@ Things you may want to cover:
 
 - Deployment instructions
 
-- SSH へ変更 revised
+- SSH へ変更 revised2 7/26
 
 - ...
