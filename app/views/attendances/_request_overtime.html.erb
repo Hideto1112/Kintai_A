@@ -1,0 +1,64 @@
+<div class="modal-dialog modal-lg modal-dialog-center">
+  <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">×</span>
+      </button>
+    <div class="modal-body">
+      <div class="row">
+      <div class="col-md-10 col-md-offset-1 center">
+        <p>【残業申請】</p>
+      <table class="table table-bordered table-condensed table-hover">
+          <thead>
+              <tr>
+                  <th>日付</th>
+                  <th>曜日</th>
+                  <th>終了予定時間</th>
+                  <th>翌日</th>
+                  <th>業務処理内容</th>
+                  <th>指示者確認㊞</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td>
+                      <div class="form-inline">
+                          <select class="form-control" name="#" id="#">
+                              <option value=""></option>
+                              
+                              <% 24.times do |n| 
+                                n = "%02d" % n %>
+                                <option value=<%= n %>><%= n %></option>
+                              <% end %>
+                          </select>
+                          :
+                          <select class="form-control" name="#" id="#">
+                              <option value=""></option>
+                              
+                              <% 60.times do |n| 
+                                n = "%02d" % n %>
+                                <option value=<%= n %>><%= n %></option>
+                              <% end %>
+                          </select>
+                      </div>
+                  </td>
+                  <td>
+                    <input type="checkbox" value="1" name="#" id="#">
+                  </td>
+                  <td>
+                    <input type="text" class="form-control" name="#" id="#">
+                  </td>
+                  <td>
+                    <select class="form-control" name="#" id="#">
+                    </select>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+        <input type="submit" name="#" value="変更を送信" class="btn btn-primary">
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
